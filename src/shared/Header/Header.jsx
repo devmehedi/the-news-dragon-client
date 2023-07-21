@@ -9,8 +9,8 @@ const Header = () => {
   
     return (
       <Container>
-        <div className="text-center">
-          <img src={logo} alt="" />
+        <div className="text-center my-5">
+          <img className="img-fluid" src={logo} alt="" />
           <p className="text-secondary">
             <small>Journalism Without Fear or Favour</small>
           </p>
@@ -26,7 +26,6 @@ const Header = () => {
             aliquid libero.
           </Marquee>
         </div>
-        
       </Container>
     );
 };

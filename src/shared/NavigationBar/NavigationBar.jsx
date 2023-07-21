@@ -15,20 +15,29 @@ const NavigationBar = () => {
       <Container>
         <Navbar collapseOnSelect expand="lg" className="my-3">
           <Container>
-            <Navbar.Brand className="text-primary" href="#home">
+            <Navbar.Brand className="text-info fw-bold fs-3" href="#home">
               Dragon News
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mx-auto">
                 <Nav.Link href="/">
-                  <Link to="/categories/0">Home</Link>
+                  <Link
+                    className="text-decoration-none fw-bold text-warning"
+                    to="/categories/0"
+                  >
+                    Home
+                  </Link>
                 </Nav.Link>
                 <Nav.Link href="/about">
-                  <Link>About</Link>
+                  <Link className="text-decoration-none fw-bold text-warning">
+                    About
+                  </Link>
                 </Nav.Link>
                 <Nav.Link href="/career">
-                  <Link>Career</Link>
+                  <Link className="text-decoration-none fw-bold text-warning">
+                    Career
+                  </Link>
                 </Nav.Link>
               </Nav>
               <Nav>
@@ -43,7 +52,9 @@ const NavigationBar = () => {
                 )}
                 <Nav.Link eventKey={2} href="#memes">
                   {user ? (
-                    <Button onClick={hanleLogOut} variant="dark">Logout</Button>
+                    <Button onClick={hanleLogOut} variant="dark">
+                      Logout
+                    </Button>
                   ) : (
                     <Link to="/login">
                       <Button variant="dark">Login</Button>
